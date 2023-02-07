@@ -9,9 +9,9 @@
       </v-container>
     </v-main>
     <v-footer style="background-color: #fff;">
-      <v-btn color="primary" style="margin: 10px;" fab>
-        <v-icon>mdi-format-list-bulleted</v-icon>
-      </v-btn>
+      <v-badge color="red" :content="items.length" overlap>
+        <v-icon color="primary" style="margin: 10px;" large>mdi-format-list-bulleted</v-icon>
+      </v-badge>
     </v-footer>
   </v-app>
 </template>
