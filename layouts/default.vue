@@ -36,11 +36,12 @@
       </v-btn>
     </template>
     <v-item-group style="width: 100%">
-      <v-item v-for="item in items" :key="item.num" style="margin: 15px">
+      <v-item v-for="item in items" :key="item.id" style="margin: 15px">
         <v-card>
-          <v-card-title>{{ item.title }}</v-card-title>
+          <v-card-title>{{ item.name }} ({{ item.id }})</v-card-title>
           <v-card-text>
-            <v-progress-linear indeterminate :color="item.color"></v-progress-linear>
+            <v-label>{{ item.job }}</v-label>
+            <v-progress-linear :value="item.progress" color="primary"></v-progress-linear>
           </v-card-text>
         </v-card>
       </v-item>
@@ -55,10 +56,10 @@ export default {
   data() {
     return {
       items: [
-        { title: 'Loading 1', num: 1, color: 'primary' },
-        { title: 'Loading 2', num: 2, color: 'secondary' },
-        { title: 'Loading 3', num: 3, color: 'warning' },
-        { title: 'Loading 4', num: 4, color: 'success' },
+        { id: 0, name: 'Import Session', job: 'Downloading file', progress: 0 },
+        { id: 1, name: 'Import Session', job: 'Downloading file', progress: 30 },
+        { id: 2, name: 'Import Session', job: 'Downloading file', progress: 10 },
+        { id: 3, name: 'Import Session', job: 'Downloading file', progress: 20 },
       ],
       fab: false
     }
