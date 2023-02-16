@@ -1,8 +1,5 @@
 <template>
   <v-app dark>
-    <v-app-bar fixed app>
-      <v-toolbar-title>Random Nuxt App</v-toolbar-title>
-    </v-app-bar>
     <v-main>
       <v-container>
         <Nuxt />
@@ -66,3 +63,9 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.v-application {
+  background-color: #f9fef6;
+}
+</style>
