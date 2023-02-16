@@ -27,6 +27,8 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
+    // https://google-fonts.nuxtjs.org/
+    '@nuxtjs/google-fonts'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -54,9 +56,14 @@ export default {
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
     theme: {
-      dark: true,
+      dark: false,
       themes: {
         dark: {
+          primary: '#4caf50',
+          secondary: '#ff8c00',
+          accent: '#9c27b0'
+        },
+        light: {
           primary: '#4caf50',
           secondary: '#ff8c00',
           accent: '#9c27b0'
@@ -67,4 +74,16 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  googleFonts: {
+    families: {
+      Roboto: [100, 400, 900],
+      'Josefin+Sans': true,
+      Lato: [100, 300],
+      Raleway: {
+        wght: [100, 400],
+        ital: [100]
+      },
+    }
+  }
 }
