@@ -50,6 +50,7 @@ export default {
       items: [
         { title: 'Home', icon: 'mdi-home', route: '/' },
         { title: 'Heart', icon: 'mdi-heart', route: '/heart' },
+        { title: 'Account', icon: 'mdi-account-heart', route: '/account' },
       ]
     }
   },
