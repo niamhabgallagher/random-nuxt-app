@@ -15,7 +15,7 @@
   background-size: cover;
   background-color: #cccccc;
   height: 100vh;
-  width: 97vw;
+  width: 100%;
   margin: 0;
 }
 </style>

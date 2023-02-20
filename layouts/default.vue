@@ -51,6 +51,7 @@ export default {
         { title: 'Home', icon: 'mdi-home', route: '/' },
         { title: 'Heart', icon: 'mdi-heart', route: '/heart' },
         { title: 'Account', icon: 'mdi-account-heart', route: '/account' },
+        { title: 'Work', icon: 'mdi-briefcase', route: '/work' },
       ]
     }
   },
